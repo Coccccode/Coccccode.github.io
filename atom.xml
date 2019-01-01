@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://coccccode.github.io/"/>
-  <updated>2018-12-31T13:01:54.826Z</updated>
+  <updated>2019-01-01T08:38:52.037Z</updated>
   <id>https://coccccode.github.io/</id>
   
   <author>
@@ -17,13 +17,22 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>2016蓝桥杯题解</title>
+    <title></title>
     <link href="https://coccccode.github.io/2018/12/31/2016%E8%93%9D%E6%A1%A5%E6%9D%AF%E9%A2%98%E8%A7%A3/"/>
     <id>https://coccccode.github.io/2018/12/31/2016蓝桥杯题解/</id>
-    <published>2018-12-31T13:01:54.000Z</published>
-    <updated>2018-12-31T13:01:54.826Z</updated>
+    <published>2018-12-31T13:01:54.825Z</published>
+    <updated>2019-01-01T08:38:52.037Z</updated>
+    
+    <content type="html"><![CDATA[<hr><p>title: 2016蓝桥杯题解<br>date: 2018-12-31 21:01:54</p><h2 id="tags-蓝桥杯"><a href="#tags-蓝桥杯" class="headerlink" title="tags: 蓝桥杯"></a>tags: 蓝桥杯</h2><h2 id="蓝桥杯题解"><a href="#蓝桥杯题解" class="headerlink" title="蓝桥杯题解"></a>蓝桥杯题解</h2><h3 id="1-煤球数目"><a href="#1-煤球数目" class="headerlink" title="1.煤球数目"></a>1.煤球数目</h3><p>有一堆煤球，堆成三角棱锥形。具体：<br>第一层放1个，<br>第二层3个（排列成三角形），<br>第三层6个（排列成三角形），<br>第四层10个（排列成三角形），<br>….<br>如果一共有100层，共有多少个煤球？</p><p>请填表示煤球总数目的数字。<br>注意：你提交的应该是一个整数，不要填写任何多余的内容或说明性文字。</p><p>注意是三角棱锥，并不是三角形。<br>因为是水题所以不多说直接上代码</p><pre><code class="C++"> <span class="keyword">int</span> a[<span class="number">105</span>];<span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><span class="function"></span>{      <span class="keyword">int</span> i;    <span class="keyword">int</span> sum;    a[<span class="number">1</span>]=<span class="number">1</span>;    <span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;=<span class="number">100</span>;++i){        a[i]=a[i<span class="number">-1</span>]+i;    }    sum=<span class="number">0</span>;    <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=<span class="number">100</span>;++i){        <span class="comment">//printf("%d ",a[i]);</span>        sum=sum+a[i];    }    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,sum);    <span class="keyword">return</span> <span class="number">0</span>;}</code></pre>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;hr&gt;
+&lt;p&gt;title: 2016蓝桥杯题解&lt;br&gt;date: 2018-12-31 21:01:54&lt;/p&gt;
+&lt;h2 id=&quot;tags-蓝桥杯&quot;&gt;&lt;a href=&quot;#tags-蓝桥杯&quot; class=&quot;headerlink&quot; title=&quot;tags: 蓝桥杯&quot;&gt;&lt;/a&gt;tag
+      
     
     </summary>
     
