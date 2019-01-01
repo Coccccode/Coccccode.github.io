@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://coccccode.github.io/"/>
-  <updated>2018-12-26T12:13:39.585Z</updated>
+  <updated>2019-01-01T09:54:00.748Z</updated>
   <id>https://coccccode.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2016年B组蓝桥杯题解</title>
+    <link href="https://coccccode.github.io/2019/01/01/%E4%BD%A0%E5%A5%BD/"/>
+    <id>https://coccccode.github.io/2019/01/01/你好/</id>
+    <published>2019-01-01T09:32:24.000Z</published>
+    <updated>2019-01-01T09:54:00.748Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="蓝桥杯题解"><a href="#蓝桥杯题解" class="headerlink" title="蓝桥杯题解"></a>蓝桥杯题解</h2><h3 id="1-煤球数目"><a href="#1-煤球数目" class="headerlink" title="1.煤球数目"></a>1.煤球数目</h3><p>有一堆煤球，堆成三角棱锥形。具体：<br>第一层放1个，<br>第二层3个（排列成三角形），<br>第三层6个（排列成三角形），<br>第四层10个（排列成三角形），<br>….<br>如果一共有100层，共有多少个煤球？<br>请填表示煤球总数目的数字。<br>注意：你提交的应该是一个整数，不要填写任何多余的内容或说明性文字。</p><p>注意是三角棱锥，并不是三角形。<br>因为是水题所以不多说直接上代码<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">int</span> a[<span class="number">105</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line">    <span class="keyword">int</span> sum;</span><br><span class="line">    </span><br><span class="line">    a[<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;=<span class="number">100</span>;++i)&#123;</span><br><span class="line">        a[i]=a[i<span class="number">-1</span>]+i;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    sum=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=<span class="number">100</span>;++i)&#123;</span><br><span class="line">        <span class="comment">//printf("%d ",a[i]);</span></span><br><span class="line">        sum=sum+a[i];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,sum);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;蓝桥杯题解&quot;&gt;&lt;a href=&quot;#蓝桥杯题解&quot; class=&quot;headerlink&quot; title=&quot;蓝桥杯题解&quot;&gt;&lt;/a&gt;蓝桥杯题解&lt;/h2&gt;&lt;h3 id=&quot;1-煤球数目&quot;&gt;&lt;a href=&quot;#1-煤球数目&quot; class=&quot;headerlink&quot; title=&quot;1
+      
+    
+    </summary>
+    
+    
+      <category term="蓝桥杯" scheme="https://coccccode.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
