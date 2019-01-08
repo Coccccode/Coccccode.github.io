@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://coccccode.github.io/"/>
-  <updated>2019-01-04T08:31:21.153Z</updated>
+  <updated>2019-01-08T08:53:41.155Z</updated>
   <id>https://coccccode.github.io/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="https://coccccode.github.io/2019/01/08/test/"/>
+    <id>https://coccccode.github.io/2019/01/08/test/</id>
+    <published>2019-01-08T08:53:41.000Z</published>
+    <updated>2019-01-08T08:53:41.155Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>2016年B组蓝桥杯题解</title>
